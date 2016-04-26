@@ -1,16 +1,20 @@
-import React from 'react'
-
-import Header from '../components/Header.jsx'
+import React from 'react';
+import { Grid } from 'react-bootstrap';
+import Navigation from '../components/Navigation.jsx';
 
 class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-        {this.props.content}
+        <Navigation/>
+        <Grid>
+          { this.props.content }
+        </Grid>
       </div>
-    )
+    );
   }
 }
+
+Layout.propTypes = { content: React.PropTypes.element.isRequired };
 
 export default Layout;

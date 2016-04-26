@@ -24,3 +24,5 @@ kadira:flow-router
 dburles:collection-helpers
 static-html
 react-meteor-data
+alanning:roles
+accounts-base
